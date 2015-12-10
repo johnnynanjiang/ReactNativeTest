@@ -11,20 +11,15 @@
 
 @implementation ReactView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 - (void)awakeFromNib {
     NSString *urlString = @"http://localhost:8081/ReactComponents/index.ios.bundle";
     NSURL *jsCodeLocation = [NSURL URLWithString:urlString];
+    
+    NSDictionary *props = @{@"property 1 name" : @"property 1 value", @"property 2 name" : @"property 2 value"};
+    
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"SimpleApp"
-                                                        initialProperties:nil
+                                                        initialProperties:props
                                                         launchOptions:nil];
     [self addSubview:rootView];
     rootView.frame = self.bounds;

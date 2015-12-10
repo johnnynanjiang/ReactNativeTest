@@ -7,18 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "ReactView.h"
-
-@interface ViewController ()
-
-@property (weak, nonatomic) IBOutlet ReactView *reactView;
-
-@end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.textField.text = @"test";
 }
 
 - (void)didReceiveMemoryWarning {
