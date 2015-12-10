@@ -24,8 +24,10 @@
 }
 
 - (IBAction)save:(id)sender {
+    NSDictionary *newProps = @{@"property 1 name": self.textField.text};
+    [self.reactView save:newProps];
+    
     [self updateView];
-    self.textField.text = @"saved";
 }
 
 - (void) updateView {

@@ -28,6 +28,6 @@
 }
 
 - (void)save:(NSDictionary *)props {
-    
+    self.props = props;
 }
 @end
