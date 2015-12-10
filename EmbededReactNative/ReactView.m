@@ -20,11 +20,12 @@
 */
 
 - (void)awakeFromNib {
-    NSString *urlString = @"http://localhost:8081/index.ios.bundle";
+    NSString *urlString = @"http://localhost:8081/ReactComponents/index.ios.bundle";
     NSURL *jsCodeLocation = [NSURL URLWithString:urlString];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName: @"SimpleApp"
-                                                     launchOptions:nil];
+                                                        moduleName:@"SimpleApp"
+                                                        initialProperties:nil
+                                                        launchOptions:nil];
     [self addSubview:rootView];
     rootView.frame = self.bounds;
 }

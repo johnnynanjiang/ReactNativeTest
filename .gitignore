@@ -1,4 +1,5 @@
 Pods/
 Podfile.lock
 npm-debug.log
-EmbededReactNative.xcworkspace/xcuserdata/johnnyjiang.xcuserdatad/UserInterfaceState.xcuserstate
+EmbededReactNative.xcodeproj/
+EmbededReactNative.xcworkspace/
