@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RCTRootView.h"
 
-@interface ReactView : UIView
+@interface ViewModel : NSObject
 
 @property NSDictionary *props;
 

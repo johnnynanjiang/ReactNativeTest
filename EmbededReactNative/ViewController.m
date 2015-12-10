@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.reactView];
+    self.viewModel = [[ViewModel alloc] init];
     
     [self updateView];
 }
@@ -25,13 +25,13 @@
 
 - (IBAction)save:(id)sender {
     NSDictionary *newProps = @{@"property 1 name": self.textField.text};
-    [self.reactView save:newProps];
+    [self.viewModel save:newProps];
     
     [self updateView];
 }
 
 - (void) updateView {
-    self.label.text = self.reactView.props[@"property 1 name"];
-    self.textField.text = self.reactView.props[@"property 1 name"];
+    self.label.text = self.viewModel.props[@"property 1 name"];
+    self.textField.text = self.viewModel.props[@"property 1 name"];
 }
 @end

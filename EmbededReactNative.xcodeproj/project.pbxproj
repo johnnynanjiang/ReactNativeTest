@@ -14,7 +14,7 @@
 		6D77165C1ACA1567009C2FC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77165B1ACA1567009C2FC4 /* Images.xcassets */; };
 		6D77165F1ACA1567009C2FC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D77165D1ACA1567009C2FC4 /* LaunchScreen.xib */; };
 		6D77166B1ACA1567009C2FC4 /* EmbededReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D77166A1ACA1567009C2FC4 /* EmbededReactNativeTests.m */; };
-		6DECD6B61ACABF2100FCE733 /* ReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECD6B51ACABF2100FCE733 /* ReactView.m */; };
+		6DECD6B61ACABF2100FCE733 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECD6B51ACABF2100FCE733 /* ViewModel.m */; };
 		8874913F35FBABE9A9837B4A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDE0ACD4FDDBBF806A123E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 		6D7716641ACA1567009C2FC4 /* EmbededReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbededReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7716691ACA1567009C2FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D77166A1ACA1567009C2FC4 /* EmbededReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbededReactNativeTests.m; sourceTree = "<group>"; };
-		6DECD6B41ACABF2100FCE733 /* ReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactView.h; sourceTree = "<group>"; };
-		6DECD6B51ACABF2100FCE733 /* ReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactView.m; sourceTree = "<group>"; };
+		6DECD6B41ACABF2100FCE733 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		6DECD6B51ACABF2100FCE733 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		BDDE0ACD4FDDBBF806A123E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDCB8395C30E31A13B28527 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +108,8 @@
 				6D77165B1ACA1567009C2FC4 /* Images.xcassets */,
 				6D77165D1ACA1567009C2FC4 /* LaunchScreen.xib */,
 				6D77164E1ACA1567009C2FC4 /* Supporting Files */,
-				6DECD6B41ACABF2100FCE733 /* ReactView.h */,
-				6DECD6B51ACABF2100FCE733 /* ReactView.m */,
+				6DECD6B41ACABF2100FCE733 /* ViewModel.h */,
+				6DECD6B51ACABF2100FCE733 /* ViewModel.m */,
 			);
 			path = EmbededReactNative;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DECD6B61ACABF2100FCE733 /* ReactView.m in Sources */,
+				6DECD6B61ACABF2100FCE733 /* ViewModel.m in Sources */,
 				6D7716571ACA1567009C2FC4 /* ViewController.m in Sources */,
 				6D7716541ACA1567009C2FC4 /* AppDelegate.m in Sources */,
 				6D7716511ACA1567009C2FC4 /* main.m in Sources */,

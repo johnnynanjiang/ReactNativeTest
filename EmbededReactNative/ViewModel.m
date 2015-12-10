@@ -6,10 +6,19 @@
 //  Copyright (c) 2015 吴迪（子回）. All rights reserved.
 //
 
-#import "ReactView.h"
-#import "RCTRootView.h"
+#import "ViewModel.h"
 
-@implementation ReactView
+@implementation ViewModel
+
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self awakeFromNib];
+    }
+    return self;
+}
 
 - (void)awakeFromNib {
     NSString *urlString = @"http://localhost:8081/ReactComponents/index.ios.bundle";
@@ -21,8 +30,6 @@
                                                         moduleName:@"SimpleApp"
                                                         initialProperties:props
                                                         launchOptions:nil];
-    [self addSubview:rootView];
-    rootView.frame = self.bounds;
     
     self.props = rootView.appProperties;
 }
