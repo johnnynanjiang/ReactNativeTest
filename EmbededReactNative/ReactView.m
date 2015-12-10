@@ -23,6 +23,11 @@
                                                         launchOptions:nil];
     [self addSubview:rootView];
     rootView.frame = self.bounds;
+    
+    self.props = rootView.appProperties;
 }
 
+- (void)save:(NSDictionary *)props {
+    
+}
 @end

@@ -13,7 +13,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.textField.text = @"test";
+    [self.view addSubview:self.reactView];
+    
+    [self updateView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -21,4 +23,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)save:(id)sender {
+    [self updateView];
+    self.textField.text = @"saved";
+}
+
+- (void) updateView {
+    self.label.text = self.reactView.props[@"property 1 name"];
+    self.textField.text = self.reactView.props[@"property 1 name"];
+}
 @end

@@ -10,4 +10,8 @@
 
 @interface ReactView : UIView
 
+@property NSDictionary *props;
+
+- (void) save: (NSDictionary*)props;
+
 @end

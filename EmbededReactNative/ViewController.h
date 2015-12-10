@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet ReactView *reactView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
