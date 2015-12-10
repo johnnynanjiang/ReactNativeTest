@@ -24,14 +24,14 @@
 }
 
 - (IBAction)save:(id)sender {
-    NSDictionary *newProps = @{@"property 1 name": self.textField.text};
+    NSDictionary *newProps = @{@"key1": self.textField.text};
     [self.viewModel save:newProps];
     
     [self updateView];
 }
 
 - (void) updateView {
-    self.label.text = self.viewModel.props[@"property 1 name"];
-    self.textField.text = self.viewModel.props[@"property 1 name"];
+    self.label.text = self.viewModel.props[@"key1"];
+    self.textField.text = self.viewModel.props[@"key1"];
 }
 @end

@@ -21,10 +21,11 @@
 }
 
 - (void)awakeFromNib {
-    NSString *urlString = @"http://localhost:8081/ReactComponents/index.ios.bundle";
+    // need to change to http://localhost:8081/ReactComponents/index.ios.bundle on my own Mac, strange!
+    NSString *urlString = @"http://localhost:8081/index.ios.bundle";
     NSURL *jsCodeLocation = [NSURL URLWithString:urlString];
     
-    NSDictionary *props = @{@"property 1 name" : @"property 1 value", @"property 2 name" : @"property 2 value"};
+    NSDictionary *props = @{@"key1" : @"initial value", @"key2" : @"initial value 2"};
     
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"SimpleApp"
